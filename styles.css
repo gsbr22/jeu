@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    gap: 20px;
+}
+
+.left-panel, .right-panel {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+select, button, input {
+    padding: 8px 12px;
+    margin: 5px 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.hidden {
+    display: none;
+}
+
+.player-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-info {
+    flex: 2;
+}
+
+.player-actions {
+    flex: 1;
+    text-align: right;
+}
+
+#message-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border-radius: 5px;
+    display: none;
+}
+
+#squad-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
